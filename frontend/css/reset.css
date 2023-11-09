@@ -16,7 +16,7 @@ html,body{
     user-select: none;
     width: 100%;
     scroll-behavior: smooth;
-    /* -webkit-user-drag: none; */
+    overflow-x: hidden;
 }
 
 .top_logo {

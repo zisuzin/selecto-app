@@ -65,13 +65,13 @@
                         let bgItem = el.querySelector("img");
                         
                         if(before_image == 'signature') {
-                            bgItem.src = decodeURIComponent(`00.data/02.imgData/SELECTO_COFFEE/c-signature-bg.jpg`);
+                            bgItem.src = decodeURIComponent(`./img/c-signature-bg.jpg`);
                         } else if(before_image == 'beverage') {
-                            bgItem.src = decodeURIComponent(`00.data/02.imgData/SELECTO_COFFEE/c-beverage-bg.jpg`);
+                            bgItem.src = decodeURIComponent(`./img/c-beverage-bg.jpg`);
                         } else if(before_image == 'coffee') {
-                            bgItem.src = decodeURIComponent(`00.data/02.imgData/SELECTO_COFFEE/c-coffee-bg.png`);
+                            bgItem.src = decodeURIComponent(`./img/c-coffee-bg.png`);
                         } else if(before_image == 'cookie') {
-                            bgItem.src = decodeURIComponent(`00.data/02.imgData/SELECTO_COFFEE/c-cookie-bg.png`);
+                            bgItem.src = decodeURIComponent(`./img/c-cookie-bg.png`);
                         }
 
                         if (bgItem) {
@@ -111,20 +111,20 @@
                         menuTit.innerText = main_menu[x].카테고리;
                         menuText.innerHTML = `${main_menu[x].메시지}`;
                         // let isrc = `./00.자료수집/02.이미지데이터/SELECTO_COFFEE/c-${main_menu[x]["카테고리"].toLowerCase()}-bg-1.jpg`;
-                        let isrc = decodeURIComponent(`./00.data/02.imgData/SELECTO_COFFEE/c-${main_menu[x]["카테고리"].toLowerCase()}-bg.png`);
+                        let isrc = decodeURIComponent(`././img/c-${main_menu[x]["카테고리"].toLowerCase()}-bg.png`);
 
                         // 시그니처 메뉴
                         /* 메뉴텍스트 클릭시 메뉴이미지 변경 */
                         menuImg.forEach((ele,idx) => {
-                            ele.src = decodeURIComponent(`./00.data/02.imgData/SELECTO_COFFEE/${main_menu[x]["서브이미지"][idx]}.png`);
+                            ele.src = decodeURIComponent(`././img/${main_menu[x]["서브이미지"][idx]}.png`);
                         });
 
                         /* 메뉴텍스트 클릭시 메인이미지 변경 */
-                        mainImg.src = decodeURIComponent(`./00.data/02.imgData/SELECTO_COFFEE/${main_menu[x]["메인이미지"]}.png`);
+                        mainImg.src = decodeURIComponent(`././img/${main_menu[x]["메인이미지"]}.png`);
 
                         /* 메뉴텍스트 클릭시 토핑이미지 변경 */
                         topingImg.forEach((ele,idx) =>{
-                            ele.src = decodeURIComponent(`./00.data/02.imgData/SELECTO_COFFEE/${main_menu[x]["토핑이미지"][idx]}.png`);
+                            ele.src = decodeURIComponent(`././img/${main_menu[x]["토핑이미지"][idx]}.png`);
                             // console.log(ele);
 
                             /* 'BEVERAGE' 갯수 외 이미지 숨기기/그외 보이기 */
@@ -170,7 +170,7 @@
                 
                 /* 1) 클릭대상이 "SIGNUTURE"인 경우 */
                 if (eachMenu.innerText === "SIGNATURE") {
-                    let isrc = decodeURIComponent(`00.data/02.imgData/SELECTO_COFFEE/c-signature-bg.jpg`);
+                    let isrc = decodeURIComponent(`./img/c-signature-bg.jpg`);
                     commonFn(signature_bg, isrc);
 
                     bgssImg.forEach(function(val, idx) {
@@ -182,7 +182,7 @@
                     });
                 /* 2) 클릭대상이 "BEVERAGE"인 경우 */
                 } else if (eachMenu.innerText === "BEVERAGE") {
-                    let isrc = decodeURIComponent(`00.data/02.imgData/SELECTO_COFFEE/c-beverage-bg.jpg`);
+                    let isrc = decodeURIComponent(`./img/c-beverage-bg.jpg`);
                     commonFn(beverage_bg, isrc);
                     bgssImg.forEach(function(val, idx) {
                         if(val.classList[1] != beverage_bg.classList[1]) {
@@ -193,7 +193,7 @@
                      });
                     /* 3) 클릭대상이 "COFFEE"인 경우 */
                 } else if (eachMenu.innerText === "COFFEE") {
-                    let isrc = decodeURIComponent(`00.data/02.imgData/SELECTO_COFFEE/c-coffee-bg.png`);
+                    let isrc = decodeURIComponent(`./img/c-coffee-bg.png`);
                     commonFn(coffee_bg, isrc);
                     bgssImg.forEach(function(val, idx) {
                         if(val.classList[1] != coffee_bg.classList[1]) {
@@ -204,7 +204,7 @@
                      });
                 /* 4) 클릭대상이 "COOKIE"인 경우 */
                 } else if (eachMenu.innerText === "COOKIE") {
-                    let isrc = decodeURIComponent(`00.data/02.imgData/SELECTO_COFFEE/c-cookie-bg.png`);
+                    let isrc = decodeURIComponent(`./img/c-cookie-bg.png`);
                     commonFn(cookie_bg, isrc);
                     bgssImg.forEach(function(val, idx) {
                         if(val.classList[1] != cookie_bg.classList[1]) {
