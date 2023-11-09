@@ -13,7 +13,6 @@ html,body,h1,h2,h3,ul,ol,li,a,section,header,main,footer,button,div,span,figure,
 
 html,body{
     background-color: var(--sub-brand-color);
-    user-select: none;
     width: 100%;
     scroll-behavior: smooth;
     overflow-x: hidden;

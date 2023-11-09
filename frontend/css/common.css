@@ -58,6 +58,21 @@
     margin-top: 20px;
 }
 
+/* 휠 클래스on */
+.main_nav.on li.on a {
+    border: 2px solid #555;
+}
+
+.main_nav li.on a {
+    border: 2px solid #fff;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.main_nav.on a {
+    background-color: rgba(5,5,5,0.5);
+}
+
 /***************** A. 상단영역 *****************/
 /* GNB메뉴 */
 #top {
@@ -139,7 +154,6 @@ img {
 button {
     border-radius: 20px;
     padding: 9px 24px;
-    margin-right: 15px;
     color: var(--sub-brand-color);
     background-color: var(--main-brand-color);
     font-size: 16px;
@@ -214,7 +228,7 @@ button {
 }
 
 .more_menu_down_arrow {
-    background-image: url(../00.data/02.imgData/SELECTO_COFFEE/arrow-down.png);
+    background-image: url(../img/arrow-down.png);
     background-size: cover;
     width: 20px;
     height: 20px;
@@ -222,7 +236,7 @@ button {
 }
 
 .clicked {
-    background-image: url(../00.data/02.imgData/SELECTO_COFFEE/arrow-up.png);
+    background-image: url(../img/arrow-up.png);
     background-size: cover;
     width: 20px;
     height: 20px;

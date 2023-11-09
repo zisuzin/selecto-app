@@ -41,5 +41,5 @@
 @font-face {
     font-family: "WildernessTypeface-Regular";
     font-weight: normal;
-    src: url(./fonts/WildernessTypeface-Regular.ttf) format("ttf");
+    src: url("./fonts/WildernessTypeface-Regular.ttf") format("ttf");
 }
