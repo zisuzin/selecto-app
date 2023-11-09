@@ -1,0 +1,795 @@
+@charset "utf-8";
+
+/* 1. 메인1 페이지 */
+@media screen and (max-width: 1300px) {
+    #svg_txt {
+        width: 280px;
+        height: 280px;
+        left: 51%;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    #svg_txt {
+        left: 50%;
+        height: 270px !important;
+    }
+
+    .visual_popup_wrapper > div {
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .popup_round {
+        margin-bottom: 30px;
+    }
+    
+    .go_video {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .left_side_moveIn_txt2 {
+        top: 32%;
+    }
+
+    .left_side_moveIn_txt1 {
+        top: 22%;
+    }
+}
+
+@media screen and (max-width: 1108px) {
+    #svg_txt {
+        width: 270px !important;
+        height: 270px !important;
+    }
+
+    .left_side_moveIn_txt1 {
+        left: 5%;
+    }
+
+    .left_side_moveIn_txt2 {
+        left: 5%;
+    }
+
+    .right_side_moveIn_txt1 {
+        right: 10%;
+    }
+
+    .right_side_moveIn_txt2 {
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .right_side_moveIn_txt1 {
+        right: 5%;
+    }
+    .right_side_moveIn_txt2 {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #svg_txt {
+        width: 260px !important;
+        height: 260px !important;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    #svg_txt {
+        left: 50% !important;
+    }
+}
+
+@media screen and (max-width: 633px) {
+    .popup_round {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .visual_mouse,
+    .visual_scroll,
+    .visual_vertical_bar {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 873px) {
+    .left_side_moveIn_txt1,
+    .left_side_moveIn_txt2 {
+        display: none;
+    }
+
+    .right_side_moveIn_txt1,
+    .right_side_moveIn_txt2 {
+        display: none;
+    }
+}
+
+/* 2. 메인2 페이지 */
+@media screen and (max-width: 1300px) {
+    .display_menu_signature {
+        width: 300px !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content2 {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .display_menu_signature {
+        display: none;
+    }
+
+    .main_left_content {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .main_right_content {
+        width: 100%;
+    }
+
+    .menu_seclection {
+        top: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .full_menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .select_menu {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .main_right_content_wrapper {
+        width: 90%;
+        margin-top: 80px;
+    }
+
+    .topping_menu_list {
+        margin: 50px auto;
+        width: 90%;
+    }
+
+    .recommend_topping {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_menu_info {
+        font-size: 50px !important;
+    }
+
+    .full_menu > span {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 557px) {
+    .main_menu_info {
+        font-size: 40px !important;
+    }
+
+    .full_menu > span {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .top_logo > a {
+        margin-left: -35px;
+        width: 80px;
+    }
+}
+
+/* 3. 메인3 페이지 */
+
+@media screen and (max-width: 520px) {
+    .identity_title {
+        margin: 80px 0;
+        width: 60%;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+    
+    .identity_title > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide_message {
+        height: 3rem;
+    }
+
+    .slide_message li {
+        font-size: 14px;
+    }
+
+    .slide_message_wrapper img {
+        width: 20px;
+    }
+}
+
+/* 4. 메인4 페이지 */
+@media screen and (max-width: 1300px) {
+    .right_info_content {
+        display: none;
+    }
+
+    .left_info_content_wrapper {
+        width: 100%;
+        margin-left: 150px;
+    }
+
+    .left_info_content {
+        top: 0;
+        left: 0;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .left_info_content_wrapper {
+        width: 100%;
+        margin-left: 80px !important;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .donation_challenge_content1_box > h2 .br_fir {
+        display: inline;
+    }
+
+    .donation_challenge_content1_box > h2 .br_las {
+        display: none;
+    }
+
+    .charity_count {
+        font-size: 130px;
+    }
+
+    .main_content4 {
+        height: 115vh;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .donation_challenge_content1_box > h2 {
+        font-size: 50px;
+    }
+
+    .donation_challenge_content1_box > p {
+        font-size: 15px;
+    }
+
+    .charity_count {
+        font-size: 120px;
+    }
+
+    .main_content4 {
+        margin: 50px 0;
+        height: 85vh;
+    }
+
+    .main_content4 {
+        height: 110vh;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .donation_challenge_content1_box > h2 {
+        font-size: 40px;
+    }
+
+    .donation_challenge_content2_box {
+        padding: 40px 40px;
+    }
+
+    .charity_count {
+        font-size: 100px;
+    }
+
+    .main_content4 {
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    .see_details_btn {
+        width: 160px;
+        font-size: 17px;
+    }
+
+    .charity_count {
+        font-size: 80px;
+    }
+
+    .donation_challenge_content1_box > h2 {
+        font-size: 32px;
+    }
+
+    .donation_challenge_content1_box > p {
+        font-size: 14px;
+    }
+
+    .donation_challenge_content2_box {
+        margin-top: 53px;
+    }
+
+    .charity_count::after {
+        font-size: 26px;
+    }
+
+    .charity_count_title {
+        font-size: 1rem;
+    }
+
+    .charity_count_date {
+        font-size: 13px;
+    }
+
+    .left_info_content_wrapper {
+        margin-left: 45px !important;
+    }
+
+    .main_content4 {
+        height: 85vh;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .charity_count {
+        font-size: 60px;
+    }
+
+    .cont4_br3 {
+        display: inline;
+    }
+
+    .donation_challenge_content2_box {
+        padding: 30px;
+    }
+
+    .left_info_content_wrapper {
+        margin-left: 40px !important;
+    }
+
+    .main_content4 {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .charity_count {
+        font-size: 50px;
+    }
+
+    .charity_count::after {
+        font-size: 23px;
+    }
+
+    .cont4_br1 {
+        display: inline;
+    }
+
+    .left_info_content_wrapper {
+        margin-left: 30px !important;
+    }
+
+}
+
+/* 5. 메인5 페이지 */
+@media screen and (max-width: 1300px) {
+    .poster_hidden_appear {
+        width: 184px;
+        height: 216px;
+    }
+
+    .news_events_title {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .main_inner_wrapper {
+        flex-direction: column;
+    }
+
+    .news_events_left_direct {
+        display: none;
+    }
+
+    .current_events {
+        width: 100%;
+        padding: 50px 30px;
+        position: relative;
+    }
+
+    .right_content_wrapper {
+        width: 100%;
+    }
+
+    .news_events_title {
+        position: relative;
+        padding: 30px;
+    }
+
+    .left_content_wrapper {
+        width: 100%;
+        border-bottom: 1px solid rgba(111, 112, 112, 0.3);
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .main_event > li:nth-child(2) {
+        white-space: nowrap;
+        width: auto;
+    }
+    
+    .poster_hidden_appear {
+        display: none;
+    }
+    
+    .news_events_title {
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 80px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .main_event li:nth-child(2) {
+        font-size: 20px;
+    }    
+}
+
+@media screen and (max-width: 525px) {
+    .main_event > li:nth-child(1),
+    .main_event > li:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .main_event > li:nth-child(2) {
+        font-size: 15px;
+    }
+
+    .news_events_title {
+        font-size: 34px;
+    }
+
+    .br {
+        display: none;
+    }
+
+    .event_poster {
+        width: 36px;
+        height: 28px;
+    }
+
+    .event_poster img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .news_events_title {
+        font-size: 28px;
+    }
+}
+
+/* 6. 메인6 페이지 */
+@media screen and (max-width: 1700px) {
+    .click-through-btn {
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .click-through-btn {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .click-through-btn {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .click-through-btn {
+        width: 107px;
+        margin-left: 30px;
+    }
+
+    .click-through-btn > span {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+
+
+@media screen and (max-width: 695px) {
+    .click-through-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .selecto_insta_info h2 {
+        font-size: 35px;
+    }
+
+    .selecto_insta_info img {
+        width: 45px;
+        margin-top: 5px;
+    }
+
+    .main-news-swiper-controls {
+        top: 80%;
+        width: 220px;
+    }
+
+    .swiper-slide {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .main-news-swiper-controls {
+        width: 200px;
+    }
+
+    .selecto_insta_info h2 {
+        font-size: 30px;
+    }
+
+    .selecto_insta_info img {
+        width: 40px;
+        margin-top: 5px;
+    }
+}
+
+/* 7. 메인7 페이지 */
+@media screen and (max-width: 945px) {
+    .address, .inquery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inquery > span:nth-child(2):before,
+    .inquery > span:nth-child(3):before,
+    .inquery > span:nth-child(4):before, 
+    .address > span:nth-child(2)::before {
+        display: none;
+    }
+
+    .inquery > span, .address > span {
+        margin-bottom: 14px;
+    }
+
+    .go_top_btn {
+        top: 12%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .go_top_btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .address > span, .inquery > span {
+        font-size: 12px;
+    }
+
+    .copyRight > span {
+        font-size: 10px;
+    }
+
+    .privacy_policy > a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .address > span, .inquery > span {
+        font-size: 10px;
+    }
+
+    .copyRight > span {
+        font-size: 7px;
+    }
+
+    .privacy_policy > a {
+        font-size: 13px;
+    }
+}
+
+
+/* 1-1. 서브페이지1 : 브랜드스토리 */
+@media screen and (max-width: 1220px) {
+    .brand_video {
+        width: 800px !important;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .brand_video {
+        width: 700px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .img_Con {
+        display: none;
+    }
+    .contents_con {
+        width: 100% !important;
+    }
+
+    .contents_con .list_con:nth-child(2) {
+        margin-top: 15% !important;
+    }
+
+    .subpage1_content2{
+        overflow-x: hidden !important;
+    }
+
+    .title_con > h1{
+        font-size: 35px !important;
+    }
+
+    .list_con h2 {
+        font-size: 23px !important;
+    }
+
+    .list_con p {
+        font-size: 15px !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .brand_video {
+        width: 550px !important;
+    }
+}
+
+@media screen and (max-width: 718px) {
+    .subpage1_content1, .subpage1_content2 {
+        overflow-x: hidden;
+    }
+}
+
+/* 1-2. 서브페이지2 : 히스토리 */
+@media screen and (max-width: 1300px) {
+    .company_history_year {
+        top: 61% !important;
+        left: 5% !important;
+        font-size: 210px !important;
+    }
+
+    .br2-1 {
+        display: block !important;
+    }
+} 
+
+@media screen and (max-width: 1230px) {
+    .company_history_year {
+        top: 57% !important;
+        left: 5% !important;
+        font-size: 190px !important;
+    }
+
+    .work_list_month_box > span {
+        font-size: 25px;
+    }
+    .work_list_name_box > span {
+        font-size: 18px;
+    }
+
+    .company_history_list {
+        margin-bottom: 20px !important;
+    }
+
+    .work_list_month {
+        margin-right: 50px !important;
+    }
+} 
+
+@media screen and (max-width: 1020px) {
+    .company_history_year {
+        top: 49% !important;
+        left: 5% !important;
+        font-size: 150px !important;
+    }
+
+    .work_list_month_box > span {
+        font-size: 20px;
+    }
+    .work_list_name_box > span {
+        font-size: 18px;
+    }
+
+    .history_title_info {
+        margin-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .company_history_year {
+        display: none;
+    }
+
+    .company_history_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile_history_year {
+        display: block !important;
+        font-weight: bold;
+        font-size: 100px;
+        margin-bottom: 10%;
+    }
+
+    .company_history_contents {
+        top: -100px !important;
+    }
+
+    .company_history_cycle {
+        left: 20% !important;
+    }
+
+    .company_history_cycle {
+        width: 80% !important;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .company_history_cycle {
+        left: 10% !important;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .mobile_history_year {
+        font-size: 70px;
+    }
+
+    .company_history_cycle {
+        left: 7% !important;
+    }
+
+    .work_list_name {
+        font-size: 16px !important;
+    }
+
+    .company_history_list {
+        display: block !important;
+    }
+
+}

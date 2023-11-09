@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* 메인1, 메인2, 메인3, 메인4 컨텐츠 */
+.main_content1, .main_content2,
+.main_content3,.main_content4,
+.main_content5 {
+    position: relative;
+}
+
+.main_content1 {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.main_content4 {
+    margin: 100px 0;
+    height: calc(100vh + 30vh);
+    overflow-x: hidden;
+}
+
+/* 메인5 컨텐츠 */
+.main_content5 {
+    border-top: 1px solid rgba(111, 112, 112, 0.3);
+    border-bottom: 1px solid rgba(111, 112, 112, 0.3);
+}
+
+/* 서브1 컨텐츠 */
+/* 서브페이지1 */
+.subpage1_content1,
+.subpage2_content1 {
+    padding: 80px 0;
+    position: relative;
+}
+
+.subpage1_content2 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+

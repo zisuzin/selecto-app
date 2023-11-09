@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 초기화 */
+html,body,h1,h2,h3,ul,ol,li,a,section,header,main,footer,button,div,span,figure,figcaption,nav,p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    letter-spacing: -1.1px;
+}
+
+html,body{
+    background-color: var(--sub-brand-color);
+    user-select: none;
+    width: 100%;
+    scroll-behavior: smooth;
+    /* -webkit-user-drag: none; */
+}
+
+.top_logo {
+    outline: none;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+/* a 공통요소 */
+a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+h1,h2,h3,p,figcaption,a,span {
+    font-family: var(--main-brand-font);
+    color: var(--main-brand-color);
+}
