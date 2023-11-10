@@ -2,8 +2,13 @@
 window.addEventListener("DOMContentLoaded", scrollFn);
 
 function scrollFn() {
+    // 대상선정 함수
+    const qs = x => document.querySelector(x);
+    const qsa = x => document.querySelectorAll(x);
+
     // 휠 이벤트로 페이지 이동 컨트롤 ///////////////
-    const indic = document.querySelectorAll(".main_nav a");
+    const indic = qsa(".main_nav a");
+    const pg = qsa(".page");
 
     // 인디케이터 메뉴 이벤트 연결
     indic.forEach((ele, idx, obj) => {
@@ -13,10 +18,14 @@ function scrollFn() {
     // 페이지 변수
     let pgnum = 0;
     // 페이지 수
-    const pg = document.querySelectorAll(".page");
     const pgcnt = pg.length;
     // 광스크롤 금지변수 0-허용 1-불허용
     let prot_sc = 0;
+
+    // 인터벌 함수 지우기 위한 변수
+    let autoI;
+    // 타임아웃 함수 지우기 위한 변수
+    let autoT;
 
     // 1. 전체 휠 이벤트 설정 /////
     window.addEventListener("wheel", wheelFn, { passive: false });
@@ -69,12 +78,12 @@ function scrollFn() {
             // 1. 페이지 이동
             window.scrollTo(0, window.innerHeight * pgnum);
 
-            // 메뉴초기화 (class on제거)
+            // 2. 메뉴초기화 (class on제거)
             for (let x of obj) {
                 x.parentElement.classList.remove("on");
             }
 
-            // 해당 메뉴에 클래스 넣기
+            // 3. 해당 메뉴에 클래스 넣기
             obj[pgnum].parentElement.classList.add("on");
 
             chgColor(pgnum);
@@ -85,10 +94,6 @@ function scrollFn() {
 
     // 자동+페이드 슬라이드
     function autoSlide() {
-        // 대상선정 함수
-        const qs = x => document.querySelector(x);
-        const qsa = x => document.querySelectorAll(x);
-
         // 클래스 추가/제거함수
         const addCls = (x, y) => x.classList.add(y);
         const removeCls = (x, y) => x.classList.remove(y);
@@ -99,11 +104,6 @@ function scrollFn() {
         const rtimeBar = qs(".main_timebar");
         // 현재 슬라이드번호
         const ctnum = qs(".ctnum");
-
-        // 인터벌 함수 지우기 위한 변수
-        let autoI;
-        // 타임아웃 함수 지우기 위한 변수
-        let autoT;
 
         // 슬라이드번호 변수
         let snum = 0;
@@ -135,12 +135,13 @@ function scrollFn() {
     // 2,3,4,5번페이지 gnb 및 인디케이터, 컨택트 아이콘 색상 다르게 하기
     function chgColor(c) {
         // 1. 대상선정
-        // 인디케이터
-        const ind = document.querySelector(".main_nav");
+        const ind = qs(".main_nav");
 
         // 2. 클래스 넣기
         if (c === 1 || c === 2 || c === 3 || c === 4) {
             ind.classList.add("on");
+            console.log(autoI)
+            console.log(autoT)
         }
         else {
             ind.classList.remove("on");
