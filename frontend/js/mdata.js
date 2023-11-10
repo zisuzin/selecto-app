@@ -27,7 +27,7 @@ const main_menu = {
         mImg: "c-signature-item-00",
         sImg: ["c-signature-item-01","c-signature-item-02","c-signature-item-03"],
         tpImg: ["c-topping-01","c-topping-02","c-topping-03","c-topping-04"],
-        "토핑이름": ["시럽_바닐라빈","시럽_카라멜","우유_오트밀","크림_흑임자"],
+        tgName: ["시럽_바닐라빈","시럽_카라멜","우유_오트밀","크림_흑임자"],
     },
     "BEVERAGE": {
         cat: "BEVERAGE",
@@ -35,7 +35,7 @@ const main_menu = {
         mImg: "c-beverage-item-00",
         sImg: ["c-beverage-item-01","c-beverage-item-02","c-beverage-item-03"],
         tpImg: ["c-topping-02","c-topping-03","c-topping-04"],
-        "토핑이름": ["시럽_카라멜","우유_오트밀","크림_흑임자"],
+        tgName: ["시럽_카라멜","우유_오트밀","크림_흑임자"],
     },
     "COFFEE": {
         cat: "COFFEE",
@@ -43,7 +43,7 @@ const main_menu = {
         mImg: "c-coffee-item-00",
         sImg: ["c-coffee-item-01","c-coffee-item-02","c-coffee-item-03"],
         tpImg: ["c-topping-03","c-topping-04"],
-        "토핑이름": ["우유_오트밀","크림_흑임자"],
+        tgName: ["우유_오트밀","크림_흑임자"],
     },
     "COOKIE": {
         cat: "COOKIE",
@@ -51,6 +51,6 @@ const main_menu = {
         mImg: "c-cookie-item-00",
         sImg: ["c-cookie-item-01","c-cookie-item-02","c-cookie-item-03"],
         tpImg: ["c-topping-01","c-topping-02","c-topping-03","c-topping-04"],
-        "토핑이름": ["시럽_바닐라빈","시럽_카라멜","우유_오트밀","크림_흑임자"],
+        tgName: ["시럽_바닐라빈","시럽_카라멜","우유_오트밀","크림_흑임자"],
     },
 } // subpage_menu 객체

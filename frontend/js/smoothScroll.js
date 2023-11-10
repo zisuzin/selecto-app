@@ -63,7 +63,7 @@ function scrollFn() {
         updatePg(indic);
     }
     
-    /// 페이지 이동 설정갑 업데이트
+    /// 페이지 이동 설정값 업데이트
     async function updatePg(obj) {
         try {
             // 1. 페이지 이동
