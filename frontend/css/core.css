@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* 웹폰트, 공통 클래스 세팅 CSS - core.css */
+
+:root {
+    --main-brand-color: #ff4713;
+    --sub-brand-color: #f7f6f3;
+    --light_gray_color: #dfdfe0;
+    --main-font-size: 18px;
+    --title-font-weight: 500;
+    --sub_font_weight: 400;
+    --main-brand-font: "Noto Sans KR";
+    --sub-brand-font: "San Francisco";
+}
+
+* {
+    box-sizing: border-box;
+    letter-spacing: -1.1px;
+}
+
+html,body{
+    background-color: var(--sub-brand-color);
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,p,figcaption,a,span {
+    font-family: var(--main-brand-font);
+    color: var(--main-brand-color);
+}

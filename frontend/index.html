@@ -10,6 +10,7 @@
         <!-- Swiper CSS -->
         <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
         <!-- CSS -->
+        <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/main.css" />
         <link rel="stylesheet" href="./css/media.css" />
         <!-- Icon CDN -->
@@ -206,21 +207,26 @@
                     </ul>
                 </nav>
                 <!-- 1. 메인 1페이지 -->
-                <section class="main_page page" id="#pg1"> 
+                <section class="main_page page" id="#pg1">
                     <!-- Pagination -->
-                    <div class="pagination_countUp">
-                        <span class="current-pagination">1</span>
-                        <span class="pagination-total">/&nbsp;4</span>
+                    <div class="main_pg_time">
+                        <!-- 현재 슬라이드 번호 -->
+                        <!-- 슬라이드가 넘어갈때마다 해당되는 번호로 바뀜 -->
+                        <div class="ctnum">1</div>
+                        <!-- 이미지 진행시간 애니메이션 바 -->
+                        <div class="main_timebar">
+                            <span></span>
+                        </div>
+                        <!-- 전체 슬라이드 번호 -->
+                        <div>4</div>
                     </div>
                     <h2 class="left_side_moveIn_txt1 leftTxt">Select your Drink!</h2>
                     <h3 class="left_side_moveIn_txt2 leftTxt">
                         원두부터 토핑까지, <br />
                         내 입맛에 맞는 커피
                     </h3>
-
                     <h2 class="right_side_moveIn_txt1 rightTxt">MY TODAY</h2>
                     <h3 class="right_side_moveIn_txt2 rightTxt">MOOD &nbsp; & &nbsp; MODE</h3>
-
                     <div class="main_content_wrapper">
                         <ul class="content_slide_list">
                             <li>
@@ -245,12 +251,6 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- 메인1 비주얼라이징 인포 -->
-                    <div class="visual_mouse">
-                        <div class="mouseWheel"></div>
-                    </div>
-                    <div class="visual_scroll">scroll</div>
-                    <div class="visual_vertical_bar"></div>
                     <div class="visual_popup_wrapper">
                         <!-- 메인1 팝업창 -->
                         <!-- 팝업배너1 -->
@@ -559,7 +559,6 @@
         <script src="./js/menu.js"></script>
         <script src="./js/autoSlide.js"></script>
         <script src="./js/accodian.js"></script>
-        <script src="./js/swiper.js"></script>
         <script src="./js/mouse.js"></script>
         <script src="./js/number.js"></script>
         <script src="./js/burger.js"></script>

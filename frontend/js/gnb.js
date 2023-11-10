@@ -1,10 +1,6 @@
+/* 스크롤 방향값 변경시 gnb 스타일 변경 - gnb.js */
 
-/* *******************************************
-* 1) .menu 호버시 header 높이값 변경(100px->400px)
-* 2) 스크롤 up & down 
-******************************************* */
-
-/* 1) .menu 호버시 header 높이값 변경(100px->400px) */
+// .menu 호버시 header 높이값 변경(100px->400px)
 const header = document.querySelector("#top"),
     mainManuListA = document.querySelectorAll(".menu>ul>li"),
     tgsTxt = document.querySelectorAll(".sub_menu>ol a"),
@@ -15,8 +11,6 @@ const header = document.querySelector("#top"),
 
     horizontal_evt = document.querySelector("#horizontal_circle"),
     vertical_evt = document.querySelector("#vertical_circle");
-    // console.log(horizontal_evt)
-    
 
     mainManuListA.forEach((ele, idx) => {
     ele.addEventListener("mouseover", (e) => {

@@ -1,7 +1,4 @@
-
-/* ****************************************
-* 화면스크롤시 work_list별로 년도 +1씩 증가
-**************************************** */
+/* 스크롤시 년도 증감 - countup.js */
 
 const history_items = document.querySelectorAll(".company_history_cycle");
 const windowHeight = window.innerHeight;
@@ -14,8 +11,6 @@ window.addEventListener("scroll",()=>{
     let tgOffTop = ele.offsetTop;
     
     windowH = window.scrollY + window.innerHeight / 2;
-    // console.log(tgOffTop,window.scrollY + window.innerHeight / 2);
-    
         if(windowH > tgOffTop + window.innerHeight / 2 - 100) {
             history_year.innerText = `${2023 - idx}`;
         }

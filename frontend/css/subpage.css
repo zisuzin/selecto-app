@@ -2,8 +2,21 @@
 /* subpage1. 셀렉토커피 메뉴 CSS */
 
 /***************** B. 메인영역 *****************/
+/* 서브 공통 */
+.subpage1_content1,
+.subpage2_content1 {
+    padding: 80px 0;
+    position: relative;
+}
+
+.subpage1_content2 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
 /* subpage 1-1. 브랜드스토리 */
-/* 1. 메인1 컨텐츠 */
 .page_header {
     padding: 60px 0; 
     text-align: center;

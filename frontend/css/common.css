@@ -1,15 +1,8 @@
 @charset "utf-8";
 
-:root {
-    --main-brand-color: #ff4713;
-    --sub-brand-color: #f7f6f3;
-    --light_gray_color: #dfdfe0;
-    --main-font-size: 18px;
-    --title-font-weight: 500;
-    --sub_font_weight: 400;
-    --main-brand-font: "Noto Sans KR";
-    --sub-brand-font: "San Francisco";
-}
+/* 공통 css 셋팅 */
+@import url(./reset.css);
+@import url(./core.css);
 
 /* 마우스 커서 */
 .cursor {
