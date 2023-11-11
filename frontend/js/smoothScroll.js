@@ -140,8 +140,6 @@ function scrollFn() {
         // 2. 클래스 넣기
         if (c === 1 || c === 2 || c === 3 || c === 4) {
             ind.classList.add("on");
-            console.log(autoI)
-            console.log(autoT)
         }
         else {
             ind.classList.remove("on");

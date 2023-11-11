@@ -340,7 +340,8 @@ button {
         right: 5%;
         width: auto;
         transform: translateY(-50%);
-        /* transition: all 4s ease-in-out; */
+        transition: all 4s ease-in-out;
+        cursor: pointer;
     }
     
     .burger_bar {

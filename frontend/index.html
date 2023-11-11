@@ -254,26 +254,26 @@
                     <div class="visual_popup_wrapper">
                         <!-- 메인1 팝업창 -->
                         <!-- 팝업배너1 -->
-                        <div class="popup_round">
+                        <div class="popup_round" id="popup1">
                             <div class="go_video">
                                 <a href="https://www.youtube.com/watch?v=r6bibJ3wZQI&feature=youtu.be">
                                     <img src="./img/popup_img1.png" alt="브랜드영상1" />
                                 </a>
                             </div>
                             <div class="close_cursor">
-                                <span>오늘 하루 창 열지 않기</span>
+                                <span onclick="closePopup('popup1', this)">오늘 하루 창 열지 않기</span>
                                 <span>닫기</span>
                             </div>
                         </div>
                         <!-- 팝업배너2 -->
-                        <div class="popup_round">
+                        <div class="popup_round" id="popup2">
                             <div class="go_video">
                                 <a href="https://www.youtube.com/watch?v=gGHKuVlTO3M">
                                     <img src="./img/popup_img2.png" alt="브랜드영상2" />
                                 </a>
                             </div>
                             <div class="close_cursor">
-                                <span>오늘 하루 창 열지 않기</span>
+                                <span onclick="closePopup('popup2', this)">오늘 하루 창 열지 않기</span>
                                 <span>닫기</span>
                             </div>
                         </div>
@@ -554,6 +554,7 @@
         <script src="./js/plugin/swiper-bundle.min.js"></script>
         <!-- 부드러운 스크롤 -->
         <script src="./js/smoothScroll.js"></script>
+        <script src="./js/cookie.js"></script>
         <script src="./js/mdata.js"></script>
         <script src="./js/gnb.js"></script>
         <script src="./js/menu.js"></script>
