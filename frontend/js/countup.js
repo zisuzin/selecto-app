@@ -1,11 +1,14 @@
-/* 스크롤시 년도 증감 - countup.js */
+/* 년도 증감JS - countup.js */
 
-const history_items = document.querySelectorAll(".company_history_cycle");
+// 대상선정 함수
+const qs = x => document.querySelector(x);
+const qsa = x => document.querySelectorAll(x);
+
+const history_items = qsa(".company_history_cycle");
+const history_year = qs(".company_history_year");
 const windowHeight = window.innerHeight;
-const history_year = document.querySelector(".company_history_year");
 
 window.addEventListener("scroll",()=>{
-
     history_items.forEach((ele,idx)=>{
 
     let tgOffTop = ele.offsetTop;

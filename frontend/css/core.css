@@ -53,7 +53,6 @@ html,body{
     background-color: var(--sub-brand-color);
     width: 100%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 h1, h2, h3, p, figcaption, a, span {
