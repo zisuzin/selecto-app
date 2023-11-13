@@ -20,7 +20,6 @@ const header = document.querySelector("#top"),
 
         header.style.height = "400px";
         header.style.transition = ".3s ease-in-out";
-        header.style.borderBottom = "2px solid #ff4713";
 
         /* .menu li호버시 버튼색상 변경  */
         btn.style.backgroundColor = "#fff";

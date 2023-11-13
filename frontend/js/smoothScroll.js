@@ -9,6 +9,7 @@ function scrollFn() {
     // 휠 이벤트로 페이지 이동 컨트롤 ///////////////
     const indic = qsa(".main_nav a");
     const pg = qsa(".page");
+    const goBtn = qs(".go_top_btn_wrapper");
 
     // 인디케이터 메뉴 이벤트 연결
     indic.forEach((ele, idx, obj) => {
@@ -89,7 +90,16 @@ function scrollFn() {
             chgColor(pgnum);
         } catch (error) {
             console.log("푸터!");
+
+            function scrollTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+                obj[0].click();
+            }
         }
+        goBtn.addEventListener("click", scrollTop);
     }
 
     // 자동+페이드 슬라이드
@@ -131,7 +141,7 @@ function scrollFn() {
         fadeSlide();
         autoI = setInterval(fadeSlide, 5000);
     }
-    
+
     // 2,3,4,5번페이지 gnb 및 인디케이터, 컨택트 아이콘 색상 다르게 하기
     function chgColor(c) {
         // 1. 대상선정
@@ -140,8 +150,7 @@ function scrollFn() {
         // 2. 클래스 넣기
         if (c === 1 || c === 2 || c === 3 || c === 4) {
             ind.classList.add("on");
-        }
-        else {
+        } else {
             ind.classList.remove("on");
         }
     } // chgColor 함수

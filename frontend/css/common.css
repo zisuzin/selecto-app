@@ -144,7 +144,7 @@ img {
     margin-left: 10px;
 }
 
-button {
+.link button {
     border-radius: 20px;
     padding: 9px 24px;
     color: var(--sub-brand-color);
@@ -436,7 +436,7 @@ button {
     position: absolute;
     width: 50px;
     right: 100px;
-    bottom: 27rem;
+    bottom: 42rem;
     z-index: 100;
     color: #fff;
     text-align: center;
