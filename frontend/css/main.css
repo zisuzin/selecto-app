@@ -377,7 +377,7 @@
 
 .topping_item_list {
     display: flex;
-    gap: 0 20px;
+    gap: 20px;
 }
 
 .topping_item > img {
@@ -419,6 +419,9 @@
 }
 
 /* 메인3 컨텐츠 */
+#pg3 {
+    height: auto;
+}
 .identity_title {
     margin: 120px 0;
 }
@@ -481,15 +484,15 @@
     display: none;
 }
 
-.donation_challenge_content1_box > h2 {
-    font-size: 50px;
-    white-space: nowrap;
-    line-height: 60px;
+.donation_titbx {
+    font-size: calc(min(50px, 6vw));
+    color: var(--main-brand-color);
+    font-family: var(--main-brand-font);
 }
 
 .donation_challenge_content1_box > p {
+    font-size: calc(min(18px, 2.5vw));
     margin-top: 30px;
-    font-size: 18px;
 }
 
 .left_info_content_wrapper {
@@ -504,9 +507,8 @@
 }
 
 .see_details_btn {
-    margin: 30px 0;
-    font-size: 20px;
-    width: 190px;
+    font-size: calc(min(20px, 3.8vw));
+    width: calc(min(190px, 40vw));
     height: 60px;
     border-radius: 30px;
     font-weight: 700;
@@ -520,8 +522,8 @@
     display: flex;
     flex-direction: column;
     padding: 40px 60px;
-    margin-top: 40px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    width: calc(min(750px, 85vw));
 }
 
 .left_info_content {
@@ -529,39 +531,34 @@
     top: 50%;
     left: 50%;
     width: 100%;
-    height: 100%;
-    border: 1px solid;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     padding: 50px 30px;
+    gap: 30px;
 }
 
 .charity_count_title {
-    font-size: 1.4rem;
+    font-size: calc(min(22.4px, 3vw));
     font-weight: var(--title-font-weight);
 }
 
 .charity_count_date {
     color: var(--main-brand-color);
     opacity: 0.3;
+    font-size: calc(min(16px, 2.8vw));
 }
 
 .charity_count {
     color: var(--main-brand-color);
     margin-top: -20px;
-    font-size: 140px;
+    font-size: calc(min(140px, 12vw));
     font-weight: bold;
-}
-
-.charity_count_wrap {
-    white-space: nowrap;
-    width: 633px;
 }
 
 .charity_count::after {
     content: 'PACK';
-    font-size: 32px;
+    font-size: calc(min(32px, 5vw));
     margin-left: 20px;
     font-weight: 600;
 }

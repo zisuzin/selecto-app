@@ -233,139 +233,13 @@
 }
 
 @media screen and (max-width: 920px) {
-    .donation_challenge_content1_box > h2 .br_fir {
+    .donation_challenge_content1_box > .donation_titbx .br_fir {
         display: inline;
     }
 
-    .donation_challenge_content1_box > h2 .br_las {
+    .donation_challenge_content1_box > .donation_titbx .br_las {
         display: none;
     }
-
-    .charity_count {
-        font-size: 130px;
-    }
-
-    .main_page {
-        height: auto !important;
-    }
-}
-
-@media screen and (max-width: 840px) {
-    .donation_challenge_content1_box > h2 {
-        font-size: 50px;
-    }
-
-    .donation_challenge_content1_box > p {
-        font-size: 15px;
-    }
-
-    .charity_count {
-        font-size: 120px;
-    }
-
-    .main_content4 {
-        margin: 50px 0;
-        height: 85vh;
-    }
-
-    .main_content4 {
-        height: 110vh;
-    }
-}
-
-@media screen and (max-width: 775px) {
-    .donation_challenge_content1_box > h2 {
-        font-size: 40px;
-    }
-
-    .donation_challenge_content2_box {
-        padding: 40px 40px;
-    }
-
-    .charity_count {
-        font-size: 100px;
-    }
-
-    .main_content4 {
-        height: 100vh;
-    }
-
-}
-
-@media screen and (max-width: 670px) {
-    .see_details_btn {
-        width: 160px;
-        font-size: 17px;
-    }
-
-    .charity_count {
-        font-size: 80px;
-    }
-
-    .donation_challenge_content1_box > h2 {
-        font-size: 32px;
-    }
-
-    .donation_challenge_content1_box > p {
-        font-size: 14px;
-    }
-
-    .donation_challenge_content2_box {
-        margin-top: 53px;
-    }
-
-    .charity_count::after {
-        font-size: 26px;
-    }
-
-    .charity_count_title {
-        font-size: 1rem;
-    }
-
-    .charity_count_date {
-        font-size: 13px;
-    }
-
-    .main_content4 {
-        height: 85vh;
-    }
-}
-
-@media screen and (max-width: 535px) {
-    .charity_count {
-        font-size: 60px;
-    }
-
-    .cont4_br3 {
-        display: inline;
-    }
-
-    .donation_challenge_content2_box {
-        padding: 30px;
-    }
-
-    .main_content4 {
-        height: 80vh;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .charity_count {
-        font-size: 50px;
-    }
-
-    .charity_count::after {
-        font-size: 23px;
-    }
-
-    .cont4_br1 {
-        display: inline;
-    }
-
-    .left_info_content_wrapper {
-        margin-left: 30px !important;
-    }
-
 }
 
 /* 5. 메인5 페이지 */
@@ -489,15 +363,6 @@
 }
 
 @media screen and (max-width: 900px) {
-    .selecto_insta_info h2 {
-        font-size: 35px;
-    }
-
-    .selecto_insta_info img {
-        width: 45px;
-        margin-top: 5px;
-    }
-
     .main-news-swiper-controls {
         top: 80%;
         width: 220px;
@@ -511,15 +376,6 @@
 @media screen and (max-width: 524px) {
     .main-news-swiper-controls {
         width: 200px;
-    }
-
-    .selecto_insta_info h2 {
-        font-size: 30px;
-    }
-
-    .selecto_insta_info img {
-        width: 40px;
-        margin-top: 5px;
     }
 }
 
@@ -538,10 +394,6 @@
         display: none;
     }
 
-    .inquery > span, .address > span {
-        margin-bottom: 14px;
-    }
-
     .go_top_btn {
         top: 12%;
     }
@@ -552,35 +404,6 @@
         display: none;
     }
 }
-
-@media screen and (max-width: 540px) {
-    .address > span, .inquery > span {
-        font-size: 12px;
-    }
-
-    .copyRight > span {
-        font-size: 10px;
-    }
-
-    .privacy_policy > a {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    .address > span, .inquery > span {
-        font-size: 10px;
-    }
-
-    .copyRight > span {
-        font-size: 7px;
-    }
-
-    .privacy_policy > a {
-        font-size: 13px;
-    }
-}
-
 
 /* 1-1. 서브페이지1 : 브랜드스토리 */
 @media screen and (max-width: 1220px) {
@@ -722,8 +545,6 @@
     }
 }
 
-
-
 @media screen and (max-width: 600px) {
     .company_history_cycle {
         left: 10% !important;
@@ -733,6 +554,27 @@
     }
     .select_menu_title {
         font-size: calc(min(35.2px, 7vw)) !important;
+    }
+    .topping_item_list {
+        flex-wrap: wrap;
+    }
+    .topping_item > figcaption {
+        font-size: calc(min(14px, 3vw)) !important;
+    }
+    .recommend_topping_info > h3 {
+        font-size: calc(min(21.5px, 4.5vw)) !important;
+    }
+    .donation_challenge_content1_box > p {
+        font-size: calc(min(18px, 4vw)) !important;
+    }
+    .charity_count {
+        font-size: calc(min(60px, 10vw)) !important;
+    }
+    .charity_count_date {
+        font-size: calc(min(16px, 3.7vw)) !important;
+    }
+    .charity_count_title {
+        font-size: calc(min(18px, 4.5vw)) !important;
     }
 }
 
@@ -753,4 +595,25 @@
         display: block !important;
     }
 
+}
+
+/* 1-3. 서브페이지3: 메뉴 */
+@media screen and (max-width: 1130px) {
+    .menu_item figure {
+        width: 180px !important;
+        height: 180px !important;
+    }
+    .menu_item {
+        width: calc(100% / 3) !important;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .menu_item figure {
+        width: 160px !important;
+        height: 160px !important;
+    }
+    .menu_item {
+        width: calc(100% / 2) !important;
+    }
 }

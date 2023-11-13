@@ -42,16 +42,16 @@ function chgImg(txt) {
     for (let i = 0; i < subpage_menu[txt]["img"].length; i++) {
         hcode += `
         <li class="menu_item">
-            <a href="#" onclick="alert('공사중입니다.')">
-                <figure>
+            <figure>
+                <a href="#" onclick="alert('공사중입니다.')">
                     <img src="./img/${subpage_menu[txt]["img"][i]}.png" alt="${subpage_menu[txt]["img"][i]}이미지">
-                <figcaption>
-                    <div class="menu_txt">
-                    ${subpage_menu[txt]["menu"][i]}
-                    </div>
-                </figcaption>
-                </figure>
-            </a>
+                </a>
+            </figure>
+            <figcaption>
+                <div class="menu_txt">
+                ${subpage_menu[txt]["menu"][i]}
+                </div>
+            </figcaption>
         </li>
         `;
     }
