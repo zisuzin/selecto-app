@@ -154,4 +154,18 @@ function scrollFn() {
             ind.classList.remove("on");
         }
     } // chgColor 함수
+
+    function handleResize() {
+        const winW = window.innerWidth;
+
+        if (winW > 1200) {
+            // 전체 휠 이벤트 설정 /////
+            window.addEventListener("wheel", wheelFn, { passive: false });
+        } else {
+            window.removeEventListener("wheel", wheelFn);
+        }
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
 }

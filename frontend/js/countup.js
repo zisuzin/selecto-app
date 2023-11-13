@@ -1,11 +1,14 @@
 /* 년도 증감JS - countup.js */
 
+
+
 // 대상선정 함수
 const qs = x => document.querySelector(x);
 const qsa = x => document.querySelectorAll(x);
 
 const history_items = qsa(".company_history_cycle");
 const history_year = qs(".company_history_year");
+const lnbtxt = qsa(".history_top_info > a");
 const windowHeight = window.innerHeight;
 
 window.addEventListener("scroll",()=>{
@@ -19,3 +22,19 @@ window.addEventListener("scroll",()=>{
         }
     });// foreach
 });// scroll
+
+
+for(let x of lnbtxt) {
+    x.addEventListener("click",(e) => {
+        e.preventDefault();
+
+        lnbtxt.forEach((ele)=>{
+            ele.classList.remove("click_active");
+        }); // forEach 
+
+        x.classList.add("click_active");
+
+    }); // click event 
+} // for of 
+
+lnbtxt[0].click();

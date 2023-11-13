@@ -1,4 +1,4 @@
-    /* 마우스무브시 logo이미지 따라옴 js - mouse.js */
+    /* 마우스무브시 logo이미지 따라옴JS - mouse.js */
 
     // 대상선정
     const mover = document.querySelector(".cursor");

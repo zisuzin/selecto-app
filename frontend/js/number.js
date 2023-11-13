@@ -1,4 +1,4 @@
-/* count영역 진입시 자동 카운트 - number.js */
+/* count영역 진입시 자동 카운트JS - number.js */
 
   const oftop = $(".charity_count").offset().top - 100;
   let winH = $(window).height()/2;

@@ -106,10 +106,10 @@ img {
    position: relative;
    padding: 0 25px;
    width: 180px;
-   transition: 0.3s ease-in-out;
+   transition: .3s ease-in-out;
 }
 
-.menu > li > a {
+.menu li a {
     color: var(--main-brand-color);
     font-weight: var(--title-font-weight);
     font-size: var(--main-font-size);
@@ -129,14 +129,6 @@ img {
 
 .visible {
     transition: 0.2s ease;
-}
-
-.menu > ul > li:hover,
-.sub_menu > ol > li:hover {
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: var(--main-brand-color);
-    transition: none;
 }
 
 /* 링크메뉴 */
@@ -179,9 +171,9 @@ img {
 /* 사이드바 메뉴 */
 .sidebar_menu{
     position: fixed;
-    width: 320px;
+    width: calc(min(300px, 90vw));
     height: 100%;
-    right: -50%;
+    right: -100%;
     background: #fff;
     z-index: 999999;
 }
@@ -191,7 +183,7 @@ img {
 }
 
 .menu_title {
-    font-size: 20px;
+    font-size: calc(min(20px, 4.8vw));
     font-weight: 600;
     color: var(--main-brand-color);
 }
@@ -212,6 +204,13 @@ img {
 
 .business_info_btn {
     width: 110px;
+    border-radius: 20px;
+    padding: 9px 24px;
+    margin-right: 15px;
+    color: var(--sub-brand-color);
+    background-color: var(--main-brand-color);
+    font-size: calc(min(16px, 4.5vw));
+    cursor: pointer;
 }
 
 .close_btn > img {
@@ -240,7 +239,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .more_menu_hidden_list {
@@ -252,7 +251,7 @@ img {
 
 .more_menu_hidden_list > a {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: calc(min(16px, 4.5vw));
     color: var(--main-brand-color);
 }
 
@@ -352,15 +351,7 @@ img {
     }
 }
 
-@media screen and (max-width: 660px) {
-    .sidebar_menu {
-        display: none;
-    }    
-}
-
-
 /***************** C. 하단영역 *****************/
-
 #footer_info {
     position: relative;
     background-color: var(--main-brand-color);

@@ -1,4 +1,5 @@
-// 상단이동버튼클릭시 최상단 이동 
+/* 상단이동JS - scroll.js */
+
 const goBtn = document.querySelector(".go_top_btn_wrapper");
 
 goBtn.onclick = () => {
@@ -7,5 +8,3 @@ goBtn.onclick = () => {
         behavior: 'smooth'
     });
 }
-
-

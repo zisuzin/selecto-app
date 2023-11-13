@@ -1,4 +1,4 @@
-/* 메뉴&배경이미지 변경 js - menu.js */
+/* 메뉴&배경이미지 변경JS - menu.js */
 
 // 대상선정 함수
 const qs = x => document.querySelector(x);
