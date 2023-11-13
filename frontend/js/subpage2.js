@@ -2,9 +2,11 @@ let sigImg = document.querySelector(".menu_img");
 const sigTxt = document.querySelectorAll(".menu_txt");
 const createSgImg = document.createElement("img");
 const menuListAll = document.querySelectorAll(".menu_list_top_info > a");
+const urlParams = new URLSearchParams(window.location.search);
+const initmenu = urlParams.get('menu');
 
 // 클래스 active 넣기
-function moveMenu(gnb) {
+function moveMenu() {
     for (let x of menuListAll) {
         x.addEventListener("click", e => {
             e.preventDefault();
@@ -20,10 +22,18 @@ function moveMenu(gnb) {
             chgImg(btxt);
         });
     }
-    menuListAll[0].click();
+
+    if (initmenu) {
+        for (let menu of menuListAll) {
+            const menuTxt = menu.innerText;
+            if (menuTxt === initmenu) {
+                menu.click();
+            }
+        }
+    }
 }
 
-moveMenu('Signature');
+moveMenu();
 
 // 메뉴 이미지 변경
 function chgImg(txt) {
