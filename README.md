@@ -5,7 +5,7 @@
 # 🧋 Selecto Coffee
 
 `Vanilla JS`로 개발한 `'셀렉토커피' 사이트` 입니다.<br>
-<p align="middle"><a href="selecto-app.vercel.app" target="_blank">배포 링크</a></p>
+<p align="middle"><a href="https://selecto-app.vercel.app/" target="_blank">배포 링크</a></p>
 
 </div>
 
