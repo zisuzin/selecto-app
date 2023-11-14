@@ -24,6 +24,7 @@
 |기존 사이트 UI|개선 후 UI|
 |---|---|
 ![prev_main_img](https://github.com/zisuzin/selecto-app/assets/120540018/e70fce79-0a2d-4cce-840f-fae29bdb7aab)|![new_main](https://github.com/zisuzin/selecto-app/assets/120540018/b2d08cc8-d7fe-43f8-b91f-d682c1e0c509)
+텍스트없는 깔끔한 이미지만 슬라이드되어 다소 밋밋함|슬라이드 페이징, 섹션 인디케이터, 텍스트 애니 삽입하여 풍성한 느낌으로 개선
 
 > 메인 섹션1 기능 동작 개선 전/후 프리뷰입니다.
 
