@@ -181,6 +181,13 @@
         margin-left: -35px;
         width: 80px;
     }
+
+    .address > span, .inquery > span {
+        font-size: 12px !important;
+    }
+    .privacy_policy > a {
+        font-size: 14px !important;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -615,5 +622,12 @@
     }
     .menu_item {
         width: calc(100% / 2) !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .menu_item figure {
+        width: 120px !important;
+        height: 120px !important;
     }
 }
