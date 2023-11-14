@@ -429,6 +429,7 @@ img {
     width: 50px;
     right: 100px;
     bottom: 42rem;
+    top: 20%;
     z-index: 100;
     color: #fff;
     text-align: center;
