@@ -264,6 +264,11 @@ img {
     flex-direction: column;
 }
 
+.mo_menu_wrap{
+    margin-top: 30px;
+    padding: 45px;
+}
+
 .mo_menu_wrap li a{
     color: var(--main-brand-color);
     text-decoration: none;

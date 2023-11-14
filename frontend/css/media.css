@@ -1,20 +1,7 @@
 @charset "utf-8";
 
 /* 1. 메인1 페이지 */
-@media screen and (max-width: 1300px) {
-    #svg_txt {
-        width: 280px;
-        height: 280px;
-        left: 51%;
-    }
-}
-
 @media screen and (max-width: 1160px) {
-    #svg_txt {
-        left: 50%;
-        height: 270px !important;
-    }
-
     .visual_popup_wrapper > div {
         padding: 0 5px;
     }
@@ -40,11 +27,6 @@
 }
 
 @media screen and (max-width: 1108px) {
-    #svg_txt {
-        width: 270px !important;
-        height: 270px !important;
-    }
-
     .left_side_moveIn_txt1 {
         left: 5%;
     }
@@ -68,19 +50,6 @@
     }
     .right_side_moveIn_txt2 {
         right: 5%;
-    }
-}
-
-@media screen and (max-width: 1080px) {
-    #svg_txt {
-        width: 260px !important;
-        height: 260px !important;
-    }
-}
-
-@media screen and (max-width: 1060px) {
-    #svg_txt {
-        left: 50% !important;
     }
 }
 
@@ -413,18 +382,6 @@
 }
 
 /* 1-1. 서브페이지1 : 브랜드스토리 */
-@media screen and (max-width: 1220px) {
-    .brand_video {
-        width: 800px !important;
-    }
-}
-
-@media screen and (max-width: 870px) {
-    .brand_video {
-        width: 700px !important;
-    }
-}
-
 @media screen and (max-width: 800px) {
     .img_Con {
         display: none;
@@ -439,24 +396,6 @@
 
     .subpage1_content2{
         overflow-x: hidden !important;
-    }
-
-    .title_con > h1{
-        font-size: 35px !important;
-    }
-
-    .list_con h2 {
-        font-size: 23px !important;
-    }
-
-    .list_con p {
-        font-size: 15px !important;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .brand_video {
-        width: 550px !important;
     }
 }
 
@@ -489,9 +428,6 @@
     .work_list_month_box > span {
         font-size: 25px;
     }
-    .work_list_name_box > span {
-        font-size: 18px;
-    }
 
     .company_history_list {
         margin-bottom: 20px !important;
@@ -506,20 +442,19 @@
     .company_history_year {
         top: 49% !important;
         left: 5% !important;
-        font-size: 150px !important;
+        font-size: calc(min(150px, 18vw)) !important;
     }
 
     .work_list_month_box > span {
-        font-size: 20px;
-    }
-    .work_list_name_box > span {
-        font-size: 18px;
+        font-size: calc(min(20px, 5vw));
     }
 
     .history_title_info {
         margin-bottom: 5%;
     }
-
+    .company_history_contents {
+        top: -210px !important;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -535,7 +470,7 @@
     .mobile_history_year {
         display: block !important;
         font-weight: bold;
-        font-size: 100px;
+        font-size: calc(min(100px, 12vw));
         margin-bottom: 10%;
     }
 
@@ -544,7 +479,8 @@
     }
 
     .company_history_cycle {
-        left: 20% !important;
+        left: 50% !important;
+        transform: translateX(-50%);
     }
 
     .company_history_cycle {
@@ -553,9 +489,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .company_history_cycle {
-        left: 10% !important;
-    }
     .select_menu_info {
         font-size: calc(min(18px, 4vw)) !important;
     }
@@ -583,19 +516,18 @@
     .charity_count_title {
         font-size: calc(min(18px, 4.5vw)) !important;
     }
+    .page_header > p {
+        font-size: calc(min(16px, 4vw)) !important;
+    }
 }
 
 @media screen and (max-width: 580px) {
     .mobile_history_year {
-        font-size: 70px;
-    }
-
-    .company_history_cycle {
-        left: 7% !important;
+        font-size: calc(min(70px, 15vw));
     }
 
     .work_list_name {
-        font-size: 16px !important;
+        font-size: calc(min(16px, 4.2vw)) !important;
     }
 
     .company_history_list {
