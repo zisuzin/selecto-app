@@ -18,7 +18,23 @@
 
 <br>
 
-## ✨ Main Function
+## ⚙️ 디자인/기능 개선
+> 메인 상단 UI 개선 전/후 프리뷰입니다.
+
+|기존 사이트 UI|개선 후 UI|
+|---|---|
+![prev_main_img](https://github.com/zisuzin/selecto-app/assets/120540018/e70fce79-0a2d-4cce-840f-fae29bdb7aab)|![new_main](https://github.com/zisuzin/selecto-app/assets/120540018/b2d08cc8-d7fe-43f8-b91f-d682c1e0c509)
+
+> 메인 섹션1 기능 동작 개선 전/후 프리뷰입니다.
+
+|기존 사이트 기능 동작|개선 후 기능 동작|
+|---|---|
+![prev_sc](https://github.com/zisuzin/selecto-app/assets/120540018/5a9b90dd-367e-491d-889d-0b22dbd2b8f9)|![new_sc1](https://github.com/zisuzin/selecto-app/assets/120540018/b3196f49-f2b1-4ac7-9edb-b88015c0d5f9)
+메뉴 선택후 이미지 전환시 관련없는 이미지 중간에 삽입되어 부자연스러움|메뉴 선택시 기존 이미지 위로 새로운 이미지 애니메이션되도록하여 부드러운 동작으로 개선
+
+<br>
+
+## ✨ 주요 기능
 > 메인 상단
 - 텍스트 애니메이션
 - 슬라이드 페이징 / 오토 슬라이드
@@ -28,7 +44,7 @@
 <br/>
 
 > 메인 섹션1
-- 배경이미지 인/아웃 애니메이션 (본 사이트의 기능 개선)
+- 배경이미지 인/아웃 애니메이션
 ![p6](https://github.com/zisuzin/selecto-app/assets/120540018/6ad08d5b-b11c-44d1-9ff3-924aa9705818)
 
 <br/>
