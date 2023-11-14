@@ -259,6 +259,11 @@ img {
     letter-spacing: 0.5px;
 }
 
+.menu_wrap{
+    margin-top: 30px;
+    padding: 45px;
+}
+
 .mobile_right_side_menu {
     display: flex;   
     flex-direction: column;
@@ -377,9 +382,8 @@ img {
 .address > span,
 .inquery > span {
     color: #fff;
-    font-size: calc(min(14px, 3.2vw));
+    font-size: 14px;
     padding-left: 20px;
-    margin-bottom: 14px;
 }
 
 /* span태그 사이 가상요소 */
@@ -404,7 +408,7 @@ img {
 
 .privacy_policy > a {
     color: #fff;
-    font-size: calc(min(16px, 3.5vw));
+    font-size: 16px;
     font-weight: bold;
 }
 
